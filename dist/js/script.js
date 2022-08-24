@@ -72,3 +72,9 @@ selects.forEach(el => {
     })
   })
 })
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.custom-select')) {
+    selects.forEach(select => closeSelect(select))
+  }
+})

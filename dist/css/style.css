@@ -1882,10 +1882,6 @@ scrollbar .scrollbar-track {
     display: none;
   }
 
-  .input-block {
-    margin-bottom: 80px;
-  }
-
   .input-block__btn {
     top: calc(100% + 15px);
     left: 50%;
@@ -1904,5 +1900,13 @@ scrollbar .scrollbar-track {
 
   .income__img {
     transform: translate(-50%, -15%);
+  }
+
+  .custom-select__item {
+    width: 100%;
+  }
+
+  .state-select__item {
+    width: 100%;
   }
 }
