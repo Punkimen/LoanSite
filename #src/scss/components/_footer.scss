@@ -1,0 +1,96 @@
+.footer {
+  padding-bottom: 70px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width:$md4) {
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    @media(max-width:$md4) {
+      display: none;
+    }
+  }
+
+  &__links {
+    display: flex;
+  }
+}
+
+.container {}
+
+.footer-link {
+  display: block;
+  transition: all .2s;
+
+  &:not(:last-child) {
+    margin-right: 22px;
+  }
+
+  &_telegram {
+    circle {
+      transition: all .2s;
+      fill: #F34E4E;
+    }
+
+    path {
+      transition: all .2s;
+      fill: #000;
+    }
+
+    &:hover {
+      circle {
+        fill: #000;
+      }
+
+      path {
+        fill: #F34E4E;
+      }
+    }
+  }
+
+  &_fb {
+    circle {
+      fill: #519EF9;
+    }
+
+    path {
+      fill: black;
+    }
+
+    &:hover {
+      circle {
+        fill: black;
+      }
+
+      path {
+        fill: #519EF9;
+      }
+    }
+  }
+
+  &_twitter {
+    circle {
+      fill: #A551F9;
+    }
+
+    path {
+      fill: black;
+    }
+
+    &:hover {
+      circle {
+        fill: black;
+      }
+
+      path {
+        fill: #A551F9;
+      }
+    }
+  }
+}

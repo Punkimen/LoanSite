@@ -1,0 +1,62 @@
+.steps {
+
+  &__block {}
+}
+
+.finish {
+
+  &__wait {
+    text-align: center;
+  }
+
+  &__label {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #ACACAC;
+    margin-bottom: 8px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+
+    span {
+      width: 14px;
+      height: 14px;
+
+      &:not(:last-child) {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.finish-img {
+  max-width: 725px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.red-box {
+  background: #F95151;
+}
+
+.purple-box {
+  background: #A551F9;
+}
+
+.blue-box {
+  background: #519EF9;
+}

@@ -1,0 +1,136 @@
+.steps {
+  padding: 20px 0 120px;
+
+  @media(max-width:$md4) {
+    padding-bottom: 40px;
+  }
+
+  &__inner {
+    @media(max-width:$md4) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 612px;
+    padding: 93px 58px 39px 49px;
+    background: #FFFFFF;
+    box-shadow: 8px 10px 80px -39px rgba(0, 0, 0, 0.25);
+    border-radius: 44px;
+
+    @media(max-width:$md4) {
+      background: none;
+      box-shadow: none;
+      padding: 0;
+      margin-bottom: 33px;
+      min-height: auto;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    padding-left: 30px;
+  }
+
+  &__block-footer {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width:$md5) {
+      flex-direction: column;
+    }
+  }
+
+  &__block-btn {
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      @media(max-width:$md5) {
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.step-progress {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 8px 10px 25px -21px rgba(0, 0, 0, 0.44);
+  border-radius: 44px;
+  padding: 11px 22px 11px 34px;
+  margin-bottom: 30px;
+
+  @media(max-width:$md4) {
+    padding: 0;
+    display: block;
+    background: none;
+    box-shadow: none;
+  }
+
+  &__descr {
+    white-space: nowrap;
+    margin-right: 47px;
+
+    @media(max-width:$md4) {
+      margin-right: 0;
+      margin-bottom: 17px;
+    }
+  }
+
+  &__label {
+    font-weight: bold;
+    font-size: 14px;
+
+    @media(max-width:$md4) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: 10px;
+    color: #AEAEAE;
+
+    @media(max-width:$md4) {
+      text-align: center;
+    }
+  }
+
+  &__line {
+    position: relative;
+    height: 18px;
+    background: #EFEFEF;
+    box-shadow: inset 0px 0px 4px #DEDEDE;
+    border-radius: 41px;
+    overflow: hidden;
+    width: 100%;
+
+    .progress-layer {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: auto;
+      z-index: 2;
+    }
+
+    .progress-line {
+      border-radius: 41px;
+      width: 10%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background: #88D895;
+    }
+  }
+}

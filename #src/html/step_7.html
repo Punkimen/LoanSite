@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/5.0.1/smooth-scrollbar.css"
+        integrity="sha512-QyDQGQiuKrcAtAIPIaO+IBZNkmb/+U5dyMY2Qe64mhjKiF74QWuDhjrqgkbacfQqqFB2+fwWnan5TQHlb0mfUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="site-inner">
+        <div class="site-inner__contetn">
+            @@include('components/_header.html')
+            <section class="steps">
+                <div class="container">
+                    <div class="steps__inner">
+                        <div class="step-progress">
+                            <div class="step-progress__descr">
+                                <div class="step-progress__label">Your progress so far</div>
+                                <div class="step-progress__text">About 8 minutes left</div>
+                            </div>
+                            <div class="step-progress__line">
+                                <img class="progress-layer" src="img/icons/progress.svg" alt="">
+                                <div class="progress-line"></div>
+                            </div>
+                        </div>
+                        <form action="">
+                            <div class="steps__block upload">
+                                <div class="steps__title upload__title">Upload selfie photo</div>
+                                <div class="upload__subtitle">Upload driver license for Back</div>
+                                <div class="upload__wrapper">
+                                    <div class="upload__content">
+                                        <div class="upload-file">
+                                            <input type="file" class="upload-file__input">
+                                            <div class="upload-file__wrapper">
+                                                <div class="upload-file__img">
+                                                    <img src="img/upload.svg" alt="upload">
+                                                </div>
+                                                <div class="upload-file__info">
+                                                    <div class="upload-file__label">Select a CSV file to upload</div>
+                                                    <div class="upload-file__text">or drag and drop it here</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-block input-block__button">
+                                            <input type="text" name="url" placeholder="Add the file URL">
+                                            <button class="input-block__btn">Upload</button>
+                                        </div>
+                                        <div class="upload__text">
+                                            * Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit proin
+                                            amet,
+                                            amet,
+                                            integer ut.
+                                        </div>
+                                    </div>
+                                    <div class="upload__selfie">
+                                        <img src="img/selfie.svg" alt="selfie">
+                                    </div>
+                                </div>
+                                <div class="steps__block-footer">
+                                    <a href="#" class="steps__block-btn right-btn">
+                                        Continue
+                                        <span class="right-arrow">
+                                            <svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.51441 1.5117L0 3.0234L5.5 8.5117L11 14L16.5 8.5117L22 3.0234L20.4856 1.5117L18.9711 0L14.9856 3.97699L11 7.95401L7.01441 3.97699L3.02887 0L1.51441 1.5117Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="steps__block-btn btn-transparent">Back</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        @@include('components/_footer.html')
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/5.0.1/smooth-scrollbar.js"
+        integrity="sha512-fNprFnoeUomE0+m0nYtgoIrlUm81yW4dtuBVhMluVYlbpYEGMfEbUJJN4muTYiltfmDyWkQ5TpmwmIhdFK7qEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

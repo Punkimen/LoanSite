@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/5.0.1/smooth-scrollbar.css"
+        integrity="sha512-QyDQGQiuKrcAtAIPIaO+IBZNkmb/+U5dyMY2Qe64mhjKiF74QWuDhjrqgkbacfQqqFB2+fwWnan5TQHlb0mfUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="site-inner">
+        <div class="site-inner__contetn">
+            @@include('components/_header.html')
+            <section class="steps">
+                <div class="container">
+                    <div class="steps__inner">
+                        <div class="step-progress">
+                            <div class="step-progress__descr">
+                                <div class="step-progress__label">Your progress so far</div>
+                                <div class="step-progress__text">About 8 minutes left</div>
+                            </div>
+                            <div class="step-progress__line">
+                                <img class="progress-layer" src="img/icons/progress.svg" alt="">
+                                <div class="progress-line"></div>
+                            </div>
+                        </div>
+                        <div class="steps__block finish">
+                            <div class="finish-img">
+                                <img src="img/finish.svg" alt="finish">
+                            </div>
+                            <div class="finish__wait">
+                                <div class="finish__label">Please wait</div>
+                                <div class="finish__text">Checking credit history</div>
+                                <div class="finish__icon">
+                                    <span class="red-box"></span>
+                                    <span class="purple-box"></span>
+                                    <span class="blue-box"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        @@include('components/_footer.html')
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/5.0.1/smooth-scrollbar.js"
+        integrity="sha512-fNprFnoeUomE0+m0nYtgoIrlUm81yW4dtuBVhMluVYlbpYEGMfEbUJJN4muTYiltfmDyWkQ5TpmwmIhdFK7qEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

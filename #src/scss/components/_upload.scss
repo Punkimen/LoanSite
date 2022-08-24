@@ -1,0 +1,180 @@
+.upload {
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media(max-width:$md3) {
+      flex-direction: column-reverse;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__content {
+    max-width: 574px;
+    width: 100%;
+    margin-right: 20px;
+
+    @media(max-width:$md3) {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 4px;
+
+    @media(max-width:$md3) {
+      padding: 0;
+      text-align: center;
+    }
+
+    @media(max-width:$md4) {
+      text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    }
+  }
+
+  &__subtitle {
+    padding-left: 30px;
+    font-size: 14px;
+    color: #ACACAC;
+    margin-bottom: 14px;
+
+    @media(max-width:$md3) {
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-top: 35px;
+    font-size: 14px;
+    color: #ACACAC;
+
+    @media(max-width:$md3) {
+      text-align: center;
+    }
+  }
+
+  &__license {
+    max-width: 402px;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.upload-file {
+  position: relative;
+  background: #F9F9F9;
+  border: 1px solid #D8D2D2;
+  box-shadow: -5px -5px 37px rgba(255, 255, 255, 0.25), 6px 6px 27px -16px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  padding: 29px 30px 24px 50px;
+  margin-bottom: 14px;
+
+  @media(max-width:$md5) {
+    display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin-right: 50px;
+  }
+
+  &__info {}
+
+  &__label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #ACACAC;
+  }
+
+  &__input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    font-size: 0;
+    opacity: 0;
+  }
+}
+
+.upload__selfie {
+  max-width: 511px;
+  width: 100%;
+  position: relative;
+  top: -50px;
+
+  @media(max-width:$md3) {
+    top: 0;
+    margin: 0 auto 20px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.input-block {
+
+  &__button {
+    input {
+      padding-right: 140px;
+    }
+  }
+
+  @media(max-width:$md5) {
+    margin-bottom: 80px;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 13px 40px;
+    outline: none;
+    font-size: 14px;
+    color: #535353;
+    border: 1px solid #F1F1F1;
+    border-radius: 49px;
+    background: #fff;
+
+    @media(max-width:$md5) {
+      top: calc(100% + 15px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.upload__license {
+  @media(max-width:$md3) {
+    margin: 0 auto 30px;
+  }
+}
+
+.right-btn {}
+
+.right-arrow {}
+
+.btn-transparent {}

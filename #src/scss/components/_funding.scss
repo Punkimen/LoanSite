@@ -1,0 +1,81 @@
+.funding {
+  padding: 90px 0 90px;
+
+  @media(max-width:$md4) {
+    padding: 35px 0 35px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width:$md4) {
+      display: block;
+    }
+  }
+
+  &__img {
+    max-width: 690px;
+    width: 100%;
+    margin-right: 48px;
+    min-width: 450px;
+
+    @media(max-width:$md4) {
+      margin-right: 0;
+      margin-bottom: 22px;
+      min-width: auto;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    max-width: 450px;
+    width: 100%;
+    text-align: right;
+
+    @media(max-width:$md4) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 26px;
+
+    @media(max-width:$md3) {
+      text-align: center;
+    }
+
+    @media(max-width:$md4) {
+      font-size: 30px;
+    }
+
+    @media(max-width:$md5) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    color: #8D8D8D;
+    margin-bottom: 45px;
+  }
+
+  &__link {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.container {}
+
+.btn {
+
+  &_blue {}
+}
